@@ -22,15 +22,17 @@ from sleeping and displaying the mouse cursor.
 1. Using the provided script
 2. Run ./InstallConcerto.sh
 3. Follow the steps to configure the server and (optionally) a ShoutCast server
-4. Reboot
+4. Necessary script is saved to /home/pi/digitalsignage.sh. Will autorun at bootup.
+5. Reboot
 
 ### Manually configuring Concerto
-1. Install software requirements
-```sudo apt-get install x11-xserver-utils unclutter```
-
-2. Configure a cron script to auto-launch a web browser
-	File contents can be found in the .script file
+1. Install software requirements ```sudo apt-get install x11-xserver-utils unclutter```
+2. Configure a cron script to auto-launch a web browser- file contents can be found in the .script file
 3. (Optionally) Set up your ShoutCast server settings
 4. (Optionally) Set up another cron job to reboot the device daily
+
+### Future Plans
+This script will be built out into a Puppet Module to be used in large deployment groups.
+Original script will be maintiained here, as will the Puppet Module.
 
 [1] https://github.com/flamewave000/concerto_rpi

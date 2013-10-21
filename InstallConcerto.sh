@@ -130,9 +130,9 @@ do
     esac
 done
 #Copy the concerto script file header then inject the user's given Concerto server web address and then append the rest of the script
-/usr/bin/head -n 4 ./.script > $HOME/digitalsignage.sh
+/usr/bin/head -n 4 ./script > $HOME/digitalsignage.sh
 /bin/echo 'ConcertoServerIP="'$ip'"' >> $HOME/digitalsignage.sh
-/usr/bin/tail --lines=+5 ./.script >> $HOME/digitalsignage.sh
+/usr/bin/tail --lines=+5 ./script >> $HOME/digitalsignage.sh
 
 #This sets up a Cron job (Cron is a task scheduler) that will run the previous Concerto script every minute
 /bin/echo "SETTING UP CONCERTO CRON JOB"

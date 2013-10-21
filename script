@@ -30,7 +30,7 @@ if [ "$result" == "$empty" ]; then
     mac=`/sbin/ifconfig | /bin/grep -o -E "[a-zA-Z0-9]{2}(:[a-zA-Z0-9]{2}){5}" | sed 's/://g'`
     /bin/echo -n Midori: starting browser @ http://$ConcertoServerIP/screen?mac=$mac ... >> $LOG
     #Start Midori in fullscreen mode
-    /usr/bin/midori -e Fullscreen -a http://$ConcertoServerIP/screen?mac=$mac &>> $LOG &
+    /usr/bin/midori -e Fullscreen -a http://$ConcertoServerIP/?mac=$mac&width=1280&height=720 &>> $LOG &
     /bin/echo Done. >> $LOG
 else
     /bin/echo Midori: Running. >> $LOG
