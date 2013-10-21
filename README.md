@@ -32,3 +32,5 @@ from sleeping and displaying the mouse cursor.
 	File contents can be found in the .script file
 3. (Optionally) Set up your ShoutCast server settings
 4. (Optionally) Set up another cron job to reboot the device daily
+
+[1] https://github.com/flamewave000/concerto_rpi
